@@ -11,11 +11,11 @@ static struct gpio led;
 MODULE_LICENSE("BSD");
 MODULE_AUTHOR("Kaljan");
 MODULE_DESCRIPTION("LED Driver. LED connected to GPIO26");
-MODULE_SUPPORT_DEVICE("BlueLED");
+//MODULE_SUPPORT_DEVICE("BlueLED");
 
 static int __init GPIO26_init(void)
 {
-	int gpqr;
+	int gprq;
 	printk(KERN_NOTICE "gpio_init\n");
 	led.gpio = gpio_pin;
 	led.flags = GPIOF_OUT_INIT_LOW;
@@ -28,7 +28,7 @@ static int __init GPIO26_init(void)
 	
 	gprq = gpio_request(gpio_pin,"Blue LED");
 	
-	if (ret) {
+	if (gprq) {
 		printk(KERN_ALERT "Gpio request failed.\n");
 		return -2;
     }
