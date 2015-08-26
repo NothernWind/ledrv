@@ -15,3 +15,4 @@ moc_*.*
 *.ko
 *.mod.c
 *.order
+*.symvers
