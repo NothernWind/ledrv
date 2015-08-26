@@ -7,3 +7,11 @@ Makefile
 rpistm
 moc_*.*
 *.sh
+.tmp_versions/
+*.ko.cmd
+*.mod.o.cmd
+*.o.cmd
+*.log
+*.ko
+*.mod.c
+*.order
