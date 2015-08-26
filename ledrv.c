@@ -8,7 +8,7 @@ static int gpio_value = 1;
 module_param(gpio_pin, int, 0755);
 static struct gpio led;
 
-MODULE_LICENSE("BSD");
+MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Kaljan");
 MODULE_DESCRIPTION("LED Driver. LED connected to GPIO26");
 //MODULE_SUPPORT_DEVICE("BlueLED");
